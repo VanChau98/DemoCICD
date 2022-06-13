@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('clone'){
             steps{
-                git  
+                git https://github.com/VanChau98/DemoCICD.git
             }
         }
     }
