@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Clone'){
             steps{
-                git https://github.com/VanChau98/DemoCICD.git
+                git 'https://github.com/VanChau98/DemoCICD.git'
             }
         }
     }
