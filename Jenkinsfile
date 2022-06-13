@@ -8,7 +8,7 @@ pipeline{
         }
         stage('Docker'){
             steps{
-                withDockerRegistry(credentialsId: 'docker-hub', url: 'https://index.docker.io/v1/') {
+                withDockerRegistry(credentialsId: 'docker-hub demo', url: 'https://index.docker.io/v1/') {
                     sh 'docker build -t VanChau98/DemoCICD:v2 .'
                     sh 'docker push VanChau98/DemoCICD'
                 }
